@@ -9,5 +9,6 @@ namespace GPCalculator.ViewModels
     public class HomeResultSheetViewModel
     {
         public Result Result { get; set; }
+        public List<Course> Courses { get; set; }
     }
 }

@@ -33,4 +33,23 @@
             </tr>
         </tbody>
     </table>
+    <br /><br />
+    <table class="table table-bordered table-condensed">
+        <thead>
+            <tr>
+                <th>S/N</th>
+                <th>Courses</th>
+                <th>Unit</th>
+                <th>Grade</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var course in Model.Courses) {
+                <tr>@course.Sn</tr>
+                <tr>@course.Name</tr>
+                <tr>@course.Unit</tr>
+                <tr>@course.Grade</tr>
+            }
+        </tbody>
+    </table>
 </div>

@@ -24,5 +24,8 @@ namespace GPCalculator.Models
         [RegularExpression(@"^[/0-9]+[\s]*$", ErrorMessage = "Invalid Session format")]
         public string Session { get; set; }
         public string Semester { get; set; }
+        public List<Course> Courses { get; set; }
+
     }
+    
 }
