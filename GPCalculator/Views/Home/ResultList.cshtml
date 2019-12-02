@@ -1,0 +1,20 @@
+﻿@model IEnumerable<Result>
+@{
+    ViewData["Title"] = "Result List";
+}
+
+<div class="container text-center">
+    <h2 class="display-5">Result List</h2>
+    <div>
+        <ul class="list-unstyled">
+            @foreach (var result in Model)
+            {
+                <li>
+                    <a asp-action="ResultSheet" asp-controller="Home" asp-area="" asp-route-Id="@result.Id" class="page-link">
+                        @result.Lastname @result.Firstname
+                    </a>
+                </li>
+            }
+        </ul>
+    </div>
+</div>

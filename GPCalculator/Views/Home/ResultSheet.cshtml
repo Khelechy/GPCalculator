@@ -1,0 +1,36 @@
+﻿@model HomeResultSheetViewModel;
+@{
+    ViewData["Title"] = "Result Sheet";
+}
+
+<h1 class="display-4 text-center">Result Sheet</h1>
+<div class="container">
+    <table class="table table-bordered table-condensed">
+        <tbody>
+            <tr>
+                <td>Name</td>
+                <td> @Model.Result.Lastname @Model.Result.Firstname</td>
+            </tr>
+            <tr>
+                <td>Reg No</td>
+                <td> @Model.Result.Regno </td>
+            </tr>
+            <tr>
+                <td>Department</td>
+                <td> @Model.Result.Department </td>
+            </tr>
+            <tr>
+                <td>Level</td>
+                <td> @Model.Result.Level </td>
+            </tr>
+            <tr>
+                <td>Session</td>
+                <td> @Model.Result.Session </td>
+            </tr>
+            <tr>
+                <td>Semester</td>
+                <td> @Model.Result.Semester </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
