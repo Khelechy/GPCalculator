@@ -4,6 +4,13 @@
     <TargetFramework>netcoreapp3.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Remove="Migrations\20191201000549_SecondMigration.cs" />
+    <Compile Remove="Migrations\20191201000549_SecondMigration.Designer.cs" />
+    <Compile Remove="Migrations\20191203120833_SecondMigration.cs" />
+    <Compile Remove="Migrations\20191203120833_SecondMigration.Designer.cs" />
+  </ItemGroup>
+
 
   <ItemGroup>
     <Folder Include="wwwroot\assets\icons\" />

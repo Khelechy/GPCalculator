@@ -17,6 +17,7 @@ namespace GPCalculator.Models
             throw new NotImplementedException();
         }
 
+        
         public IEnumerable<Result> GetAllResult()
         {
             throw new NotImplementedException();

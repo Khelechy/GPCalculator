@@ -11,5 +11,6 @@ namespace GPCalculator.Models
         Result Add(Result result);
         Result Update(Result resultChanges);
         Result Delete(int Id);
+        
     }
 }

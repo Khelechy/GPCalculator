@@ -35,7 +35,7 @@ namespace GPCalculator.Models
             }
             return result;
         }
-
+        
         public Result GetResult(int Id)
         {
             return _resultList.FirstOrDefault(r => r.Id == Id);

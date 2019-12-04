@@ -20,6 +20,7 @@ namespace GPCalculator.Models
             return result;
         }
 
+        
         public Result Delete(int Id)
         {
             Result result = context.Results.Find(Id);

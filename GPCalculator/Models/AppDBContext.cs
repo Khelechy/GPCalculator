@@ -8,18 +8,12 @@ namespace GPCalculator.Models
 {
     public class AppDBContext : DbContext
     {
-        public AppDBContext()
-        {
-            
-        }
-
         public AppDBContext(DbContextOptions<AppDBContext> options) : base(options)
         {
            
         }
 
-        public DbSet<Result> Results { get; set; }
-        public List<Course> Course { get; set; }
-        public DbSet<Course> Courses { get; set; } 
+        public DbSet<Result> Results { get; set; } 
+        public DbSet<Course> Course { get; set; }
     }
 }

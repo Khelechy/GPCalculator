@@ -1,4 +1,4 @@
-﻿@model Result;
+﻿@model HomeResultSheetViewModel;
 
 <head>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap-theme.min.css" />
@@ -6,331 +6,203 @@
     <title>Calculate Your GP</title>
 </head>
 <body>
+    <div class="container">
+        <br />
+        <h2 class="display-5 text-center">Personal Details</h2>
 
-    <br /><br />
-    <div class="container justify-content-center">
+         <hr />
+        <div class="container justify-content-center">
 
-        <div class="col-md-12">
-            <form asp-controller="Home" asp-action="Form" method="post">
-                <!--div class="row">
-        <div class="col-md-5 col-sm-5">
-            <div class="form-group">
-                <label asp-for="Firstname">Firstname</label><br />
-                <input asp-for="Firstname" class="form-control" placeholder="Firstname" autofocus />
-                <span asp-validation-for="Firstname" class="text-danger"></span>
-            </div>
-        </div>
-        <div class="col-md-5 col-sm-5">
-            <div class="form-group">
-                <label asp-for="Lastname">Lastname</label>
-                <input asp-for="Lastname" class="form-control" placeholder="Lastname">
-                <span asp-validation-for="Lastname" class="text-danger"></span>
-            </div>
-        </div>
-    </!--div>
-    <div class="row">
-        <div class="col-md-5 col-sm-5">
-            <div class="form-group">
-                <label asp-for="Regno">Reg No</label><br />
-                <input asp-for="Regno" class="form-control" placeholder="2017/257654" />
-                <span asp-validation-for="Regno" class="text-danger"></span>
-            </div>
-        </div>
-        <div class="col-md-5 col-sm-5">
-            <div class="form-group">
-                <label asp-for="Department">Department</label>
-                <input asp-for="Department" class="form-control" placeholder="Computer Science">
-                <span asp-validation-for="Department" class="text-danger"></span>
-            </div>
-        </div>
-        <div class="col-md-2 col-sm-2">
-            <div class="form-group">
-                <label asp-for="Level">Level</label>
-                <select asp-for="Level" class="form-control">
-                    <option selected="selected" value="100">100</option>
-                    <option value="200">200</option>
-                    <option value="300">300</option>
-                    <option value="400">400</option>
-                    <option value="500">500</option>
-                    <option value="600">600</option>
-                    <option value="700">700</option>
-                </select>
-            </div>
-        </div>
+            <div class="col-md-12">
+                <form asp-controller="Home" asp-action="Form" method="post">
+                    <div class="row">
+                        <div class="col-md-5 col-sm-5">
+                            <div class="form-group">
+                                <label asp-for="Result.Firstname">Firstname</label><br />
+                                <input asp-for="Result.Firstname" class="form-control" placeholder="Firstname" autofocus />
+                                <span asp-validation-for="Result.Firstname" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="col-md-5 col-sm-5">
+                            <div class="form-group">
+                                <label asp-for="Result.Lastname">Lastname</label>
+                                <input asp-for="Result.Lastname" class="form-control" placeholder="Lastname">
+                                <span asp-validation-for="Result.Lastname" class="text-danger"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-5 col-sm-5">
+                            <div class="form-group">
+                                <label asp-for="Result.Regno">Reg No</label><br />
+                                <input asp-for="Result.Regno" class="form-control" placeholder="2017/257654" />
+                                <span asp-validation-for="Result.Regno" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="col-md-5 col-sm-5">
+                            <div class="form-group">
+                                <label asp-for="Result.Department">Department</label>
+                                <input asp-for="Result.Department" class="form-control" placeholder="Computer Science">
+                                <span asp-validation-for="Result.Department" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-2">
+                            <div class="form-group">
+                                <label asp-for="Result.Level">Level</label>
+                                <select asp-for="Result.Level" class="form-control">
+                                    <option selected="selected" value="100">100</option>
+                                    <option value="200">200</option>
+                                    <option value="300">300</option>
+                                    <option value="400">400</option>
+                                    <option value="500">500</option>
+                                    <option value="600">600</option>
+                                    <option value="700">700</option>
+                                </select>
+                            </div>
+                        </div>
 
-    </div>
-    <div class="row">
-        <div class="col-md-5 col-sm-5">
-            <div class="form-group">
-                <label asp-for="Session">Session</label><br />
-                <input asp-for="Session" class="form-control" placeholder="2019/2020" />
-                <span asp-validation-for="Session" class="text-danger"></span>
-            </div>
-        </div>
-        <div class="col-md-5 col-sm-5">
-            <div class="form-group">
-                <label asp-for="Semester">Semester</label>
-                <select asp-for="Semester" class="form-control">
-                    <option selected="selected" value="First">First</option>
-                    <option value="Second">Second</option>
-                </select>
-            </div>
-        </div>
-    </div>
-    <br /><br />-->
+                    </div>
+                    <div class="row">
+                        <div class="col-md-5 col-sm-5">
+                            <div class="form-group">
+                                <label asp-for="Result.Session">Session</label><br />
+                                <input asp-for="Result.Session" class="form-control" placeholder="2019/2020" />
+                                <span asp-validation-for="Result.Session" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="col-md-5 col-sm-5">
+                            <div class="form-group">
+                                <label asp-for="Result.Semester">Semester</label>
+                                <select asp-for="Result.Semester" class="form-control">
+                                    <option selected="selected" value="First">First</option>
+                                    <option value="Second">Second</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <br /><br />
 
+                    <h2 class="display-5 text-center">Course Details</h2>
+                    <br /><br />
 
-                <table id="coursesTable" class="table">
-                    <tr>
-                        <th>S/N</th>
-                        <th>Name</th>
-                        <th>Unit</th>
-                        <th>Grade</th>
-                    </tr>
-                    @foreach (Course course in Model.Courses)
-                    {
+                    <table id="tbl" class="table">
                         <tr>
-                            <td class="CourseSn">
-                                <span>@course.Sn</span>
-                            </td>
+                            <th>Name</th>
+                            <th>Unit</th>
+                            <th>Grade</th>
+                            <th><input type="button" class="btn btn-dark addAnother" value="Add New Course" onclick="addRow('tbl')" /></th>
+                        </tr>
+
+                        <tr>
                             <td class="Name">
-                                <span>@course.Name</span>
-                                <input type="text" value="@course.Name" style="display:none" />
+                                <input asp-for="Course.Name" class="form-control" type="text" placeholder="MTH 216" />
+                                <span asp-validation-for="Course.Name" class="text-danger"></span>
                             </td>
                             <td class="Unit">
-                                <span>@course.Unit</span>
-                                <input type="text" value="@course.Unit" style="display:none" />
+                                <input asp-for="Course.Unit" class="form-control" type="text" placeholder="2" />
+                                <span asp-validation-for="Course.Unit" class="text-danger"></span>
                             </td>
                             <td class="Grade">
-                                <span>@course.Grade</span>
-                                <input type="text" value="@course.Grade" style="display:none" />
+                                <input asp-for="Course.Grade" class="form-control" type="text" placeholder="A" />
+                                <span asp-validation-for="Course.Grade" class="text-danger"></span>
                             </td>
                             <td>
-                                <a class="Edit" href="javascript:;">Edit</a>
-                                <a class="Update" href="javascript:;" style="display:none">Update</a>
-                                <a class="Cancel" href="javascript:;" style="display:none">Cancel</a>
-                                <a class="Delete" href="javascript:;">Delete</a>
+                                <input type="button" value="Delete" onclick="DeleteRow(this)" class="btn btn-dark btn-sm" />
                             </td>
                         </tr>
-                    }
-                </table>
-                <table>
-                    <tr>
-                        <td>
-                            Name<br />
-                            <input type="text" id="textName" />
-                        </td>
-                        <td>
-                            Unit<br />
-                            <input type="text" id="textUnit" />
-                        </td>
-                        <td>
-                            Grade<br />
-                            <input type="text" id="textGrade" />
-                        </td>
-                        <td>
-                            <br />
-                            <input type="button" id="btnAdd" value="Add" />
-                        </td>
-                    </tr>
-                </table>
-                <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-                <script type="text/javascript" src="http://ajax.cdnjs.com/ajax/libs/json2/20110223/json2.js"></script>
-                <script type="text/javascript">
-                    $(function () {
-                        if ($("#coursesTable tr").length > 2) {
-                            $("#coursesTable tr:eq(1)").remove();
-                        } else {
-                            var row = $("#coursesTable tr:last-child");
-                            row.find(".Edit").hide();
-                            row.find(".Delete").hide();
-                            row.find("span").html('&nbsp;');
-                        }
-                    });
-                    function AppendRow(row, courseSn, name, unit, grade) {
-                        $(".CourseSn", row).find("span").html(courseSn);
 
-                        $(".Name", row).find("span").html(name);
-                        $(".Name", row).find("input").val(name);
+                        <tr>
+                            <td class="Name">
+                                <input asp-for="Course.Name" class="form-control" type="text" placeholder="COS 202" />
+                                <span asp-validation-for="Course.Name" class="text-danger"></span>
+                            </td>
+                            <td class="Unit">
+                                <input asp-for="Course.Unit" class="form-control" type="text" placeholder="2" />
+                                <span asp-validation-for="Course.Unit" class="text-danger"></span>
+                            </td>
+                            <td class="Grade">
+                                <input asp-for="Course.Grade" class="form-control" type="text" placeholder="B" />
+                                <span asp-validation-for="Course.Grade" class="text-danger"></span>
+                            </td>
+                            <td>
+                                <input type="button" value="Delete" onclick="DeleteRow(this)" class="btn btn-dark btn-sm" />
+                            </td>
+                        </tr>
 
-                        $(".Unit", row).find("span").html(unit);
-                        $(".Unit", row).find("input").val(unit);
+                        <tr>
+                            <td class="Name">
+                                <input asp-for="Course.Name" class="form-control" type="text" placeholder="STA 232" />
+                                <span asp-validation-for="Course.Name" class="text-danger"></span>
+                            </td>
+                            <td class="Unit">
+                                <input asp-for="Course.Unit" class="form-control" type="text" placeholder="3" />
+                                <span asp-validation-for="Course.Unit" class="text-danger"></span>
+                            </td>
+                            <td class="Grade">
+                                <input asp-for="Course.Grade" class="form-control" type="text" placeholder="A" />
+                                <span asp-validation-for="Course.Grade" class="text-danger"></span>
+                            </td>
+                            <td>
+                                <input type="button" value="Delete" onclick="DeleteRow(this)" class="btn btn-dark btn-sm" />
+                            </td>
+                        </tr>
 
-                        $(".Grade", row).find("span").html(grade);
-                        $(".Grade", row).find("input").val(grade);
-                    };
 
-                    $("body").on("click", "#btnAdd", function () {
-                        var textName = $("#textName");
-                        var textUnit = $("#textUnit");
-                        var textGrade = $("#textGrade");
-                        $.ajax({
-                            type: "POST",
-                            url: "/Home/InsertCourse",
-                            data: '{name: "' + textName.val() + '", country: "' + textUnit.val() + '", country: "' + textGrade.val() + '" }',
-                            contentType: "application/json; charset=utf-8",
-                            dataType: "json",
-                            success: function (r) {
-                                var row = $("#coursesTable tr:last-child");
-                                if ($("#coursesTable tr:last-child span").eq(0).html() != "&nbsp;") {
-                                    row = row.clone();
-                                }
-                                AppendRow(row, r.courseSn, r.name, r.unit, r.grade);
-                                textName.val("");
-                                textUnit.val("");
-                                textGrade.val("");
-                            }
-                        });
-                    });
-                    $("body").on("click", "#coursesTable .Edit", function () {
-                        var row = $(this).closest("tr");
-                        $("td", row).each(function () {
-                            if ($(this).find("input").length > 0) {
-                                $(this).find("input").show();
-                                $(this).find("span").hide();
-                            }
-                        });
-                        row.find(".Update").show();
-                        row.find(".Cancel").show();
-                        row.find(".Delete").hide();
-                        $(this).hide();
-                    });
-                    $("body").on("click", "#coursesTable .Update", function () {
-                        var row = $(this).closest("tr");
-                        $("td", row).each(function () {
-                            if ($(this).find("input").length > 0) {
-                                var span = $(this).find("span");
-                                var input = $(this).find("input");
-                                span.html(input.val());
-                                span.show();
-                                input.hide();
-                            }
-                        });
-                        row.find(".Edit").show();
-                        row.find(".Delete").show();
-                        row.find(".Cancel").hide();
-                        $(this).hide();
+                    </table>
 
-                        var course = {};
-                        course.courseSn = row.find(".CourseSn").find("span").html();
-                        course.name = row.find(".Name").find("span").html();
-                        course.unit = row.find(".Unit").find("span").html();
-                        course.grade = row.find(".Grade").find("span").html();
-                        $.ajax({
-                            type: "POST",
-                            url: "/Home/UpdateCourse",
-                            data: '{course:' + JSON.stringify(course) + '}',
-                            contentType: "application/json; charset=utf-8",
-                            dataType: "json"
-                        });
-                    });
+                    <br /><br />
+                    <div class="container text-center">
+                        <button class="btn btn-dark m-1" type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
 
-                    $("body").on("click", "#coursesTable .Cancel", function () {
-                        var row = $(this).closest("tr");
-                        $("td", row).each(function () {
-                            if ($(this).find("input").length > 0) {
-                                var span = $(this).find("span");
-                                var input = $(this).find("input");
-                                input.val(span.html());
-                                span.show();
-                                input.hide();
-                            }
-                        });
-                        row.find(".Edit").show();
-                        row.find(".Delete").show();
-                        row.find(".Update").hide();
-                        $(this).hide();
-                    });
-
-                    $("body").on("click", "#coursesTable .Delete", function () {
-                        if (confirm("Do you want to delete this row?")) {
-                            var row = $(this).closest("tr");
-                            var courseSn = row.find("span").html();
-                            $.ajax({
-                                type: "POST",
-                                url: "/Home/DeleteCourse",
-                                data: '{courseSn: ' + courseSn + '}',
-                                contentType: "application/json; charset=utf-8",
-                                dataType: "json",
-                                success: function (response) {
-                                    if ($("#coursesTable tr").length > 2) {
-                                        row.remove();
-                                    } else {
-                                        row.find(".Edit").hide();
-                                        row.find(".Delete").hide();
-                                        row.find("span").html('&nbsp;');
-                                    }
-                                }
-                            });
-                        }
-                    });
-
-                </script>
-
-                <div class="container text-center">
-                    <button class="btn btn-dark m-1" type="submit">Submit</button>
-                </div>
-            </form>
         </div>
-
     </div>
-
-
-
-
-
 
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/js/bootstable.js"></script>
     <script type="text/javascript">
-        $('#makeEditable').SetEditable({ $addButton: $('#but_add') });
+        function DeleteRow(r) {
+            var p = r.parentNode.parentNode;
+            p.parentNode.removeChild(p);
+        }
+        function addRow(table) {
+
+            var tableRef = document.getElementById(table);
+            var newRow = tableRef.insertRow(-1);
+
+            var newCell = newRow.insertCell(0);
+            var newElem = document.createElement('input');
+            newElem.setAttribute("name", "Name");
+            newElem.setAttribute("asp-for", "Course.Name");
+            newElem.setAttribute("type", "text");
+            newElem.setAttribute("class", "form-control");
+            newCell.appendChild(newElem);
+
+            newCell = newRow.insertCell(1);
+            newElem = document.createElement('input');
+            newElem.setAttribute("name", "Unit");
+            newElem.setAttribute("asp-for", "Course.Unit");
+            newElem.setAttribute("type", "text");
+            newElem.setAttribute("class", "form-control");
+            newCell.appendChild(newElem);
+
+            newCell = newRow.insertCell(2);
+            newElem = document.createElement('input');
+            newElem.setAttribute("name", "Grade");
+            newElem.setAttribute("asp-for", "Course.Grade");
+            newElem.setAttribute("type", "text");
+            newElem.setAttribute("class", "form-control");
+            newCell.appendChild(newElem);
+
+            newCell = newRow.insertCell(3);
+            newElem = document.createElement('input');
+            newElem.setAttribute("type", "button");
+            newElem.setAttribute("class", "btn btn-dark btn-sm");
+            newElem.setAttribute("value", "Delete");
+            newElem.setAttribute("onclick", 'DeleteRow(this)')
+            newCell.appendChild(newElem);
+        }
     </script>
 </body>
-<!--<table class="table table-hover" id="makeEditable">
-                    <thead>
-                        <tr>
-                            <th>Course</th>
-                            <th>Unit</th>
-                            <th>Grade</th>
-                            <span style="float:right"><button class="btn btn-dark" id="but_add">Add New Row</button></span>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>MTH 216</td>
-                            <td>3</td>
-                            <td>A</td>
-                        </tr>
-                        <tr>
-                            <td>STA 232
-                            <td>2</td>
-                            <td>A</td>
-                        </tr>
-                        <tr>
-                            <td>STA 211</td>
-                            <td>2</td>
-                            <td>B</td>
-                        </tr>
-                        <tr>
-                            <td>COS 251</td>
-                            <td>2</td>
-                            <td>B</td>
-                        </tr>
-                        <tr>
-                            <td>COS 201</td>
-                            <td>2</td>
-                            <td>A</td>
-                        </tr>
-                        <tr>
-                            <td>GSP 208</td>
-                            <td>2</td>
-                            <td>A</td>
-                        </tr>
-                    </tbody>
-                </table>
-
-                <br /><br />
-
-
-                            <br /><br />-->

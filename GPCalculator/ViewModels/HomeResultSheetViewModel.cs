@@ -8,7 +8,7 @@ namespace GPCalculator.ViewModels
 {
     public class HomeResultSheetViewModel
     {
+        public Course Course { get; set; }
         public Result Result { get; set; }
-        public List<Course> Courses { get; set; }
     }
 }
