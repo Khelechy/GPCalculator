@@ -19,16 +19,16 @@ namespace GPCalculator.Models
         public string Grade { get; set; }
 
 
-        private Course[] courses;
+        private List<Course> courses = new List<Course>();
         int position = -1;
 
         public Course()
         {
-            courses = new Course[3]
+            courses = new List<Course>();
             {
-                new Course(){ Name="Sta 323",Unit= 3, Grade= "A" },
-                new Course(){ Name="Mth 323",Unit= 2, Grade= "A" },
-                new Course(){ Name="Cos 323",Unit= 3, Grade= "B" },
+                courses.Add(new Course { Name = "Sta 323", Unit = 3, Grade = "A" });
+                courses.Add(new Course { Name="Mth 323", Unit= 2, Grade= "A" });
+                courses.Add(new Course { Name = "Cos 323", Unit = 3, Grade = "B" });
 
             };
         }
@@ -44,7 +44,7 @@ namespace GPCalculator.Models
         public bool MoveNext()
         {
             position++;
-            return (position < courses.Length);
+            return (position < courses.Count);
         }
 
         public void Reset()

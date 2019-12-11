@@ -1,21 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Izy\\Documents\\Visual Studio 2019\\Projects\\GPCalculator\\GPCalculator\\GPCalculator.csproj": {}
+    "C:\\Users\\khelechy\\Documents\\GitHub\\GPCalculator1\\GPCalculator\\GPCalculator.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Izy\\Documents\\Visual Studio 2019\\Projects\\GPCalculator\\GPCalculator\\GPCalculator.csproj": {
+    "C:\\Users\\khelechy\\Documents\\GitHub\\GPCalculator1\\GPCalculator\\GPCalculator.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Izy\\Documents\\Visual Studio 2019\\Projects\\GPCalculator\\GPCalculator\\GPCalculator.csproj",
+        "projectUniqueName": "C:\\Users\\khelechy\\Documents\\GitHub\\GPCalculator1\\GPCalculator\\GPCalculator.csproj",
         "projectName": "GPCalculator",
-        "projectPath": "C:\\Users\\Izy\\Documents\\Visual Studio 2019\\Projects\\GPCalculator\\GPCalculator\\GPCalculator.csproj",
-        "packagesPath": "C:\\Users\\Izy\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Izy\\Documents\\Visual Studio 2019\\Projects\\GPCalculator\\GPCalculator\\obj\\",
+        "projectPath": "C:\\Users\\khelechy\\Documents\\GitHub\\GPCalculator1\\GPCalculator\\GPCalculator.csproj",
+        "packagesPath": "C:\\Users\\khelechy\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\khelechy\\Documents\\GitHub\\GPCalculator1\\GPCalculator\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Izy\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\khelechy\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.0"
